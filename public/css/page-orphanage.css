@@ -87,6 +87,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    line-height: 1.5;
 }
 
 .open-details div {
@@ -106,8 +107,17 @@ main {
 }
 
 .open-details .open-on-weekends {
+    border-radius: 20px;
+}
+
+.open-on-weekends.open {
     background: linear-gradient(149.97deg, #e6f7fb 9.13%, #ffffff 92.67%);
     border: 1px solid #b3dae2;
-    border-radius: 20px;
     color: #37c77f;
+}
+
+.open-on-weekends.closed {
+    background: linear-gradient(149.97deg, #fcf0f4 9.13%, #ffffff 92.67%);
+    border: 1px solid #ffbcd4;
+    color: #ff669d;
 }
